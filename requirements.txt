@@ -1,0 +1,10 @@
+Django==1.5.4
+FLiP==1.2
+MySQL-python==1.2.4
+Werkzeug==0.9.4
+argparse==1.2.1
+distribute==0.7.3
+django-evolution==0.6.9
+django-extensions==1.2.2
+six==1.4.1
+wsgiref==0.1.2
