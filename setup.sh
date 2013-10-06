@@ -1,8 +1,12 @@
 #!/bin/bash
 
+PKGs='build-essential'
+
 if [[ ! -f /usr/bin/mysql_config ]] ; then
-	sudo apt-get install -y libmysqlclient-dev
+	PKGs=$PKGs' libmysqlclient-dev'
 fi
+
+sudo apt-get install -y $PKGs
 
 if [[ -f requirements.txt ]] ; then
 	if [[ ! -d venv ]] ; then
